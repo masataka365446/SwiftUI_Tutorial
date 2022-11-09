@@ -7,6 +7,12 @@
 
 import Foundation
 
+import Combine
+
+final class ModelData: ObservableObject {
+    @Published var landmarks: [Landmark] = load("landmarkData.json")
+}
+
 //から初期化するランドマークの配列を作成します。landmarkData.json
 var landmarks: [Landmark] = load("landmarkData.json")
 

@@ -15,6 +15,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String
     var state: String
     var description: String
+    var isFavorite: Bool
     
     //データから画像の名前を読み取るプロパティと、アセット カタログから画像を読み込む計算プロパティを追加します。
     private var imageName: String

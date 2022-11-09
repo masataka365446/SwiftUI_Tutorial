@@ -16,6 +16,12 @@ struct LandmarkRow: View {
                 .frame(width: 50, height: 50)
             Text(landmark.name)
             Spacer()
+            
+            //スペーサーの後に、ifステートメント内に星の画像を追加して、現在のランドマークがお気に入りかどうかをテストします。
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }
