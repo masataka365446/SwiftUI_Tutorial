@@ -13,6 +13,7 @@
 		663C21C6291A1FEE00099E2D /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C21C5291A1FEE00099E2D /* LandmarkRow.swift */; };
 		663C21C8291A21B500099E2D /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C21C7291A21B500099E2D /* LandmarkList.swift */; };
 		663C21CA291A245700099E2D /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C21C9291A245700099E2D /* LandmarkDetail.swift */; };
+		664223FC291BC07A00F25209 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664223FB291BC07A00F25209 /* FavoriteButton.swift */; };
 		666E45EE2919EF9000F6FBBF /* SwiftUI_TutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666E45ED2919EF9000F6FBBF /* SwiftUI_TutorialApp.swift */; };
 		666E45F02919EF9000F6FBBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666E45EF2919EF9000F6FBBF /* ContentView.swift */; };
 		666E45F22919EF9100F6FBBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666E45F12919EF9100F6FBBF /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		663C21C5291A1FEE00099E2D /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		663C21C7291A21B500099E2D /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		663C21C9291A245700099E2D /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		664223FB291BC07A00F25209 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		666E45EA2919EF9000F6FBBF /* SwiftUI_Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		666E45ED2919EF9000F6FBBF /* SwiftUI_TutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TutorialApp.swift; sourceTree = "<group>"; };
 		666E45EF2919EF9000F6FBBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,11 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				666E45EF2919EF9000F6FBBF /* ContentView.swift */,
-				666E46172919F33F00F6FBBF /* CircleImage.swift */,
-				666E46192919F55D00F6FBBF /* MapView.swift */,
-				663C21C5291A1FEE00099E2D /* LandmarkRow.swift */,
-				663C21C7291A21B500099E2D /* LandmarkList.swift */,
-				663C21C9291A245700099E2D /* LandmarkDetail.swift */,
+				664223FD291BC14100F25209 /* Landmarks */,
+				664223FE291BC16300F25209 /* Helpers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,6 +114,26 @@
 				663C21BC291A0F2000099E2D /* landmarkData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		664223FD291BC14100F25209 /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				663C21C9291A245700099E2D /* LandmarkDetail.swift */,
+				663C21C7291A21B500099E2D /* LandmarkList.swift */,
+				663C21C5291A1FEE00099E2D /* LandmarkRow.swift */,
+			);
+			path = Landmarks;
+			sourceTree = "<group>";
+		};
+		664223FE291BC16300F25209 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				666E46172919F33F00F6FBBF /* CircleImage.swift */,
+				666E46192919F55D00F6FBBF /* MapView.swift */,
+				664223FB291BC07A00F25209 /* FavoriteButton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		666E45E12919EF9000F6FBBF = {
@@ -309,6 +328,7 @@
 				666E45F02919EF9000F6FBBF /* ContentView.swift in Sources */,
 				666E461A2919F55D00F6FBBF /* MapView.swift in Sources */,
 				666E45EE2919EF9000F6FBBF /* SwiftUI_TutorialApp.swift in Sources */,
+				664223FC291BC07A00F25209 /* FavoriteButton.swift in Sources */,
 				663C21C8291A21B500099E2D /* LandmarkList.swift in Sources */,
 				663C21CA291A245700099E2D /* LandmarkDetail.swift in Sources */,
 				666E46182919F33F00F6FBBF /* CircleImage.swift in Sources */,

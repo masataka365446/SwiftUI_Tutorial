@@ -27,6 +27,9 @@ struct LandmarkRow: View {
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
+    //オブジェクトで動作するようにプレビューを更新
+    static var landmarks = ModelData().landmarks
+    
     static var previews: some View {
         Group {
             LandmarkRow(landmark: landmarks[0])

@@ -16,5 +16,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        //プレビューを更新して、モデル オブジェクトを環境に追加
+            .environmentObject(ModelData())
     }
 }

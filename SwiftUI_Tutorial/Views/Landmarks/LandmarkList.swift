@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    
+    //プロパティ宣言を追加し、プレビューに修飾子を追加します。
+    @EnvironmentObject var modelData: ModelData
+    
     @State private var showFavoritesOnly = false
     
     //プロパティと各値をチェックして、ランドマーク リストのフィルター処理されたバージョンを計算します。
     var filteredLandmarks: [Landmark] {
-        landmarks.filter { landmark in
+        //ランドマークをフィルタリングする際のデータとして使用。
+        modelData.landmarks.filter { landmark in
             (!showFavoritesOnly || landmark.isFavorite)
         }
     }
@@ -39,5 +44,6 @@ struct LandmarkList: View {
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
    LandmarkList()
+            .environmentObject(ModelData())
     }
 }
